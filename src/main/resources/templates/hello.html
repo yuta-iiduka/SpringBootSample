@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html xmlns:th="httpp://www.thymleaf.org">
+<head>
+	<meta charset="UTF-8">
+	<title>HelloWorld</title>
+	</head>
+<body>
+	<!-- 見出し -->
+	<h1>Hello World</h1>
+	
+	<!-- サンプルフォーム -->
+	<form method="post" action="/hello">
+		Input
+		<input type="text" name="text1" />
+		<input type="submit" value="OK">
+	</form>
+	
+	<!-- 従業員情報入力フォーム -->
+	<br/>
+	<form method="post" action="/hello/db">
+		従業員ID：<input type="text" name="text2" th:value="${text2_value}" />
+		<input type="submit" value="クリック" />
+	</form>
+	
+	<!-- Mapping構成表 -->
+	<table border="1">
+		<tr>
+			<th>URL</th>
+			<th>Request</th>
+			<th>Response</th>
+		</tr>
+		<tr>
+			<td>hello</td>
+			<td>hello.html</td>
+			<td>hello/response.html</td>
+		</tr>
+	</table>
+</body>
+</html>

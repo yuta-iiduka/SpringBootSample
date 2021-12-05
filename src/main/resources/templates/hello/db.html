@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+	</head>
+	<body>
+		<h1>HelloResponseDB</h1>
+		<table>
+			<tr>
+				<td>ID:</td>
+				<td th:text="${employee.employeeId}">従業員ID</td>
+			</tr>
+			<tr>
+				<td>名前：</td>
+				<td th:text="${employee.employeeName}">従業員名</td>
+			</tr>
+			<tr>
+				<td>年齢：</td>
+				<td th:text="${employee.employeeAge}">従業員年齢</td>
+			</tr>
+		</table>
+	</body>
+</html>
