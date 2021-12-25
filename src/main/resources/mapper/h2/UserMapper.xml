@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper3.0//EN"
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTDMapper3.0//EN"
  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
  
  <!-- Mapperとxmlのマッピング -->
- <mapper namespace="com.example.repository.UserMapper">
+ <mapper namespace = "com.example.repository.UserMapper">
      <!-- ユーザー１件登録 -->
      <insert id="insertOne">
          insert into m_user(
@@ -26,4 +26,13 @@
          	,#{role}
          )
      </insert>
+     
+     <!--  ユーザー複数件取得 -->
+     <select id="findMany" resultType="MUser">
+         select
+         	*
+         from
+         	m_user
+     </select>
+     
  </mapper>

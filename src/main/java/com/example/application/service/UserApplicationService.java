@@ -1,4 +1,4 @@
-package com.example.sample.application.service;
+package com.example.application.service;
 
 import java.util.LinkedHashMap;
 import java.util.Locale;

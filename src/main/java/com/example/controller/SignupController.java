@@ -1,4 +1,4 @@
-package com.example.sample.controller;
+package com.example.controller;
 
 import java.util.Locale;
 import java.util.Map;
@@ -14,11 +14,11 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import com.example.application.service.UserApplicationService;
 import com.example.domain.user.model.MUser;
 import com.example.domain.user.service.UserService;
-import com.example.sample.application.service.UserApplicationService;
-import com.example.sample.form.GroupOrder;
-import com.example.sample.form.SignupForm;
+import com.example.form.GroupOrder;
+import com.example.form.SignupForm;
 
 import lombok.extern.slf4j.Slf4j;
 
