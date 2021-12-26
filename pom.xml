@@ -15,8 +15,18 @@
 	<description>Demo project for Spring Boot</description>
 	<properties>
 		<java.version>11</java.version>
+		<nd4j.version>0.4-rc3.6</nd4j.version>
 	</properties>
+
 	<dependencies>
+	
+		<!-- ND4J -->
+		<dependency>
+			<groupId>org.nd4j</groupId>
+			<artifactId>nd4j-jblas</artifactId>
+			<version>${nd4j.version}</version>
+		</dependency>
+		
 		<!-- MyBatis -->
 		<dependency>
 			<groupId>org.mybatis.spring.boot</groupId>
